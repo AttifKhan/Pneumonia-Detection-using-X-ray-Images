@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url({% static 'images/bg_1.jpg' %})">
+        <div class="container">
+          <div class="row align-items-end">
+            <div class="col-lg-7">
+              <h2 class="mb-0">About Us</h2>
+            </div>
+          </div>
+        </div>
+      </div> 
+    
+    <div class="custom-breadcrumns border-bottom">
+      <div class="container">
+        <a href="#">Home</a>
+        <span class="mx-3 icon-keyboard_arrow_right"></span>
+        <span class="current">About Us</span>
+      </div>
+    </div>
+
+    <div class="container pt-5 mb-5">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2 class="section-title-underline">
+                  <span>Deep Learning For Pneumonia Detection From X-Ray Images</span>
+                </h2>
+              </div>
+              <div class="col-lg-12">
+                <p>
+                    Deep learning has found a wider application in solving computer vision tasks.
+                    Deep learning in computer vision has made rapid progress over a short span and
+                    performed state-of-the-art results on challenging computer vision problems such
+                    as image classification, image segmentation, object detection, face recognition,
+                    and self-driving cars.
+                    <br>
+                    <br>
+                    It seems like a daunting task to train a deep learning model but frameworks like
+                    TensorFlow and Keras have simplified to train the model.
+                    <br>
+                    <br>
+                    For this application, we have trained the ResNet-50 model on Chest X-Ray Images
+                    using transfer learning. You can download Chest X-Ray Images from Kaggle.
+                </p><br>
+                  <h4>Capabilities</h4>
+                  <p>
+                      <ul>
+                        <li>New User Registration Page</li>
+                        <li>Login and Logout</li>
+                        <li>Genric Pages - Home, About and Contact Us</li>
+                        <li>Upload Images - User-friendly interface to upload patient information</li>
+                        <li>Automatic ResNet-50 inference on the chest X-Ray images</li>
+                        <li>Generates user-friendly reports</li>
+                        <li>Manage reports - show result, update and delete data</li>
+                      </ul>
+                  </p>
+              </div>
+            </div>
+          </div>
+
+
+    <div class="site-section ftco-subscribe-1" style="background-image: url({% static 'images/bg_1.jpg' %})">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h2>Subscribe to us!</h2>
+          </div>
+          <div class="col-lg-5">
+            <form action="" class="d-flex">
+              <input type="text" class="rounded form-control mr-2 py-3" placeholder="Enter your email">
+              <button class="btn btn-primary rounded py-3 px-4" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+{% endblock %}
